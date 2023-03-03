@@ -4,7 +4,14 @@
   "workspaces": [
     "./package/*"
   ],
-  "scripts": {},
+  "scripts": {
+    "clone:store": "git clone https://github.com/20020389/phoneshop-backend.git backend",
+    "clone:client": "cd package && git clone https://github.com/20020389/phoneshop client",
+    "service:clone": "yarn run clone:store && yarn run clone:client",
+    "dev:web": "yarn workspace client dev",
+    "dev:clould": "yarn workspace clould dev",
+    "dev:store": "yarn workspace phoneshop dev"
+  },
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT"
