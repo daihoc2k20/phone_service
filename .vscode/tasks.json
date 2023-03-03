@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "phoneshop dev",
+      "type": "shell",
+      "command": "yarn workspace phoneshop dev"
+    },
+    {
+      "label": "client dev",
+      "type": "shell",
+      "command": "yarn workspace client dev"
+    },
+    {
+      "label": "cloud dev",
+      "type": "shell",
+      "command": "yarn workspace cloud dev"
+    }
+  ]
+}
